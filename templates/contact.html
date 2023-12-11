@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Indian Spinners Association</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Add your custom CSS styles here */
+        /* Style for board member details */
+        .board-member {
+            margin-bottom: 20px;
+        }
+
+        body{
+            background-color: #414141;
+            color: aliceblue;
+        }
+        hr {
+            border-color: #007bff; /* Change this color to the desired color */
+            border-width: 2px; /* Optional: Modify the border width */
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="container mt-4">
+        <h1>Contact Details</h1>
+        <hr>
+        <h2>Mr. M L Jhunjhunwala, Executive Director</h2>
+        <p>
+            Shop No. 4, Gokul Accord A, Thakur Complex<br>
+            Kandivali East, Mumbai 400 101<br>
+            Phone: <a href="tel:+919323466171">+91 9323466171</a><br>
+            Email: <a href="mailto:contact@isa-domain.com">contact@isa-domain.com</a>
+        </p>
+
+        <h2>Mr. Prashant Mohta, President</h2>
+        <p>
+            (Provide additional contact details here as per your requirement)
+        </p>
+
+        <h2>Mr. Prakash Maheshwar, Vice President</h2>
+        <p>
+            Phone: <a href="tel:+919772214445">+91 9772214445</a><br>
+            Email: <a href="mailto:info@isa-domain.com">info@isa-domain.com</a>
+        </p>
+
+        <h3>Overview of Indian Spinning Industry</h3>
+        <p>
+            (Provide an overview of the spinning industry, including statistics on exports, production, and any other relevant information to make the website attractive.)
+        </p>
+
+        <p>
+            For more details or inquiries, please feel free to <a href="mailto:info@isa-domain.com">contact us</a>.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
