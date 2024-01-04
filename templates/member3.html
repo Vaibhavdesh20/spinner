@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prashant Mohota - President, Indian Spinners Association</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional CSS styles can be added here */
+    /* For styling purposes */
+    .profile-image {
+      max-width: 100%;
+      height: 75%;
+    }
+    
+  </style>
+</head>
+<body style="background-color: #ffffff;">
+  {% include 'navbar.html' %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../static/images/member3.jpg" alt="M.L. Jhunjhunwala" class="img-fluid profile-image">
+    </div>
+    <div class="col-md-8">
+      <h1>M.L. Jhunjhunwala</h1>
+      <h2>Executive Director, Indian Spinners Association</h2>
+      <p style="font-size:25px;">In an additional development, M.L. Jhunjhunwala, former President of RSWM Ltd., has been appointed as the Executive Director. The Indian Spinners Association's role in uniting spinning mills focused on man-made and synthetic fibers under one umbrella signifies its dedication to fostering growth and collaboration within the industry.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% include 'footer.html' %}
+</html>

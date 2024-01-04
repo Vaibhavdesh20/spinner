@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Spinners Association</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom CSS styles here */
+        /* Style the footer */
+        footer {
+            background-color: #333333;
+            color: aliceblue;
+            padding: 20px 0;
+            text-align: center;
+        }
+        body{
+            background-color: #414141;
+            color: aliceblue;
+        }
+        a:hover{
+            color: ##00adb5;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.2em; /* Increase the font size */
+        }
+        .pass{
+            font-style: italic;
+            font-size: 1em;
+        }
+        hr {
+            border-color: #007bff; /* Change this color to the desired color */
+            border-width: 2px; /* Optional: Modify the border width */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Indian Spinners Association</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="member">Member List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <section id="about">
+            <h2>About Indian Spinners Association</h2>
+            <hr style="color: #3A5795;">
+            <p class="pass">
+                HISTORY IS COVERED IN OBJECTIVES SENT. STILL I REPEAT BRIEFLY.
+
+                ISA WAS FORMED IN 1985 BY LEADING SPINNERS LIKE RAJASTHAN SPINNING & WVG MILLS LTD, ADITYA MILLS, BANSWARA SYNTEX ETC. THE OBJECTIVE OF ISA WAS TO PROTECT THE INTEREST OF SPINNING MILLS USING MANMAADE FIBRES AND NATURAL FIBRE. DURING THOSE DAY MAN MADE FIIBRES CARRIED VERY HIGH DUTIES AND AVAILABILITY WAS ALSO AN ISSUE. INDIA WAS A CONTROLLED ECONOMY AND THERE WERE TOO MANY REGULATIONS TO BE COMPIED WITH. EXPORT IMPORTS WERE ALSO HIGHLY REGULATED. ISA TOOK ALL NECESSARY STEPS TO REPRESENT TO CENTRAL GOVT ABOUT VERIOUA HURDLES FACED BY SPINNERS AND SUPPORT NEEDWD FROM GOVT. ISA REPRESENTED TO GOVT ABOUT POLICY CHANGES NEEDED TO HAVE SMOOTH BUSINESS FLOW, INCLUDING EXPORT AND IMPORTS.  ISA TOOK BUSINESS DELEGETTIONS ABROD TO APPRAISE YARN USRES ABOUT INDIA 'S POTENTIAL AS YARN EXPORTERS.
+                
+            </p>
+        </section>
+
+        <section id="gallery">
+            <h2>Spinning Textile Images</h2>
+            <!-- Replace the below placeholders with your spinning textile images -->
+            <div class="row">
+                
+                <div class="col-md-4 mb-4">
+                    <img src="{% static "../static/images/pexels-gustavo-fring-3984865.jpg" %}" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="{% static "../static/images/photo-1654107901963-da894140e2ea.jpeg" %}" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="{% static "../static/images/photo-1669125018411-6e35079302ae.jpeg" %}" class="img-fluid" alt="Image 3">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        <div class="container mt-4">
+            <h1>Contact Details</h1>
+            <hr>
+            <h2>Mr. M L Jhunjhunwala, Executive Director</h2>
+            <p>
+                Shop No. 4, Gokul Accord A, Thakur Complex<br>
+                Kandivali East, Mumbai 400 101<br>
+                Phone: <a href="tel:+919323466171">+91 9323466171</a><br>
+                Email: <a href="mailto:contact@isa-domain.com">contact@isa-domain.com</a>
+            </p>
+    
+            <h2>Mr. Prashant Mohta, President</h2>
+            <p>
+                (Provide additional contact details here as per your requirement)
+            </p>
+    
+            <h2>Mr. Prakash Maheshwar, Vice President</h2>
+            <p>
+                Phone: <a href="tel:+919772214445">+91 9772214445</a><br>
+                Email: <a href="mailto:info@isa-domain.com">info@isa-domain.com</a>
+            </p>
+    
+            <h3>Overview of Indian Spinning Industry</h3>
+            <p>
+                (Provide an overview of the spinning industry, including statistics on exports, production, and any other relevant information to make the website attractive.)
+            </p>
+    
+            <p>
+                For more details or inquiries, please feel free to get in touch.
+                Best Wishes...<a href="mailto:info@isa-domain.com">contact us</a>.
+            </p>
+        </div>
+        {% comment %} <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                
+
+
+            </p>
+        </section> {% endcomment %}
+    </div>
+
+    <footer>
+        <div class="container" >
+            <p>&copy; 2023 Indian Spinners Association. All rights reserved.</p>
+        </div>
+    </footer>
+    {% comment %} <!-- Footer -->
+    <div id="f1" style="position: absolute; bottom: 0px;width: 100%;">
+        <footer class="bg-dark text-light text-center py-3" >
+            &copy; 2023 Indian Spinners Association. All rights reserved.
+        </footer>
+    </div> {% endcomment %}
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

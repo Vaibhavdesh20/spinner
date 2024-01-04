@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activities of ISA / Services Offered</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional CSS styles can be added here */
+    .section {
+      padding: 50px 0;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .service-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  {% include 'navbar.html' %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section">
+        <h2 class="section-title">Activities of ISA / Services Offered</h2>
+        <div class="section-content">
+          <ul class="service-list">
+            <li class="service-item">Market update on yarn prices</li>
+            <li class="service-item">Update on price trend of PSF, VSF, and other fibers</li>
+            <li class="service-item">Liaison between government and industry</li>
+            <li class="service-item">Policy-related inputs and various textile impacting schemes</li>
+            <li class="service-item">Trade statistics on import/export</li>
+            <li class="service-item">Representing spinning industry in one voice</li>
+            <li class="service-item">Arranging study tours</li>
+            <li class="service-item">Regular engagement with fiber manufacturers to ensure a fair and transparent price of raw materials</li>
+            <li class="service-item">Helping spinning mills to contest anti-dumping investigations being launched by fiber industry from time to time</li>
+            <li class="service-item">Benchmarking on important industry inputs</li>
+            <li class="service-item">Giving pre-budget memorandum to government on budget proposals</li>
+            <li class="service-item">Continuous engagement with the Office of Textile Commissioner and Ministry of Textiles on various industry-related issues including payment of subsidy under Technology Upgradation Fund Scheme (TUFS)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% include 'footer.html' %}
+</html>

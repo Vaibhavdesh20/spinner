@@ -2,151 +2,186 @@
 {% load static %}
 {% csrf_token %}
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian Spinners Association</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Add your custom CSS styles here */
-        /* Style the footer */
-        footer {
-            background-color: #333333;
-            color: aliceblue;
-            padding: 20px 0;
-            text-align: center;
-        }
-        body{
-            background-color: #414141;
-            color: aliceblue;
-        }
-        a:hover{
-            color: ##00adb5;
-            font-weight: bold;
-            font-style: italic;
-            font-size: 1.2em; /* Increase the font size */
-        }
-        .pass{
-            font-style: italic;
-            font-size: 1em;
-        }
-        hr {
-            border-color: #007bff; /* Change this color to the desired color */
-            border-width: 2px; /* Optional: Modify the border width */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Spinner Association</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/css/styles.css" rel="stylesheet">
+  {% load static %} 
+  <link rel="stylesheet" href="{% static '../static/css/style.css' %}">
+  <style>
+    /* Add your custom styles here */
+body {
+  /* background-image: url('../static/images/pexels-3544567.jpg'); */
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-size: cover;
+  color: #414141; 
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+#about {
+  background-color: #f9f9f9;
+}
+
+#current-board img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 20px;
+}
+
+footer {
+  color: #666;
+}
+
+hr {
+  border-color: #548075 ; /* Change this color to the desired color */
+  border-width: 2px; /* Optional: Modify the border width */
+}
+
+/* Additional CSS styles can be added here */
+.section {
+  padding: 50px 0;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-content {
+  margin-bottom: 30px;
+}
+.source-link {
+  font-style: italic;
+}
+.sub-heading {
+  font-weight: bold;
+}
+
+  </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Indian Spinners Association</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="member">Member List</a>
-                </li>
-            </ul>
-        </div>
+  <div class="container-fluid p-0">
+    <!-- Header -->
+    <header>
+      <div style="background-image: url('../static/images/pexels-1487834.jpg');" class="jumbotron jumbotron-fluid text-center text-white">
+        <h1 class="display-4">Indian Spinner Association</h1>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav style="background-color: #548075;" class="navbar navbar-expand-lg navbar-light">
+      <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a style="color:white;" class="nav-link" href="index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:white;" class="nav-link" href="history">History</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:white;" class="nav-link" href="member">List of Members</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:white;" class="nav-link" href="services">Activities/Services Offered</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:white;" class="nav-link" href="activities"></a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    
-    <div class="container mt-4">
-        <section id="about">
-            <h2>About Indian Spinners Association</h2>
-            <hr style="color: #3A5795;">
-            <p class="pass">
-                HISTORY IS COVERED IN OBJECTIVES SENT. STILL I REPEAT BRIEFLY.
 
-                ISA WAS FORMED IN 1985 BY LEADING SPINNERS LIKE RAJASTHAN SPINNING & WVG MILLS LTD, ADITYA MILLS, BANSWARA SYNTEX ETC. THE OBJECTIVE OF ISA WAS TO PROTECT THE INTEREST OF SPINNING MILLS USING MANMAADE FIBRES AND NATURAL FIBRE. DURING THOSE DAY MAN MADE FIIBRES CARRIED VERY HIGH DUTIES AND AVAILABILITY WAS ALSO AN ISSUE. INDIA WAS A CONTROLLED ECONOMY AND THERE WERE TOO MANY REGULATIONS TO BE COMPIED WITH. EXPORT IMPORTS WERE ALSO HIGHLY REGULATED. ISA TOOK ALL NECESSARY STEPS TO REPRESENT TO CENTRAL GOVT ABOUT VERIOUA HURDLES FACED BY SPINNERS AND SUPPORT NEEDWD FROM GOVT. ISA REPRESENTED TO GOVT ABOUT POLICY CHANGES NEEDED TO HAVE SMOOTH BUSINESS FLOW, INCLUDING EXPORT AND IMPORTS.  ISA TOOK BUSINESS DELEGETTIONS ABROD TO APPRAISE YARN USRES ABOUT INDIA 'S POTENTIAL AS YARN EXPORTERS.
-                
-            </p>
-        </section>
-
-        <section id="gallery">
-            <h2>Spinning Textile Images</h2>
-            <!-- Replace the below placeholders with your spinning textile images -->
-            <div class="row">
-                
-                <div class="col-md-4 mb-4">
-                    <img src="{% static "../static/images/pexels-gustavo-fring-3984865.jpg" %}" class="img-fluid" alt="Image 1">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="{% static "../static/images/photo-1654107901963-da894140e2ea.jpeg" %}" class="img-fluid" alt="Image 2">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="{% static "../static/images/photo-1669125018411-6e35079302ae.jpeg" %}" class="img-fluid" alt="Image 3">
-                </div>
-                <!-- Add more images as needed -->
+    <!-- About Information -->
+    <section style="background-image: url('../static/images/pexels-3794749.jpg');" id="about" class="py-5 text-center">
+      <div style="color: white" class="container">
+        <h2>Overview Of Spinning Industries</h1>
+        <h4>The Wondrous World of Spinning: Weaving Threads in India and Beyond</h4>
+        <p>The spinning industry, where raw fibers like cotton, wool, and polyester are transformed into threads that form the foundation of fabrics, is a fascinating and globally significant sector. Let's delve into the vibrant world of spinning, focusing on its prominent presence in India and its standing on the world stage.</p>
+        </div>
+    </section>
+    <!-- Details Information --> 
+    <div style="background-color:#ffffff;" class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section">
+            <h2 class="section-title">India: A Spinning Powerhouse</h2>
+            <div class="section-content">
+              <p><span class="sub-heading">Global Leader:</span> India boasts the second-largest spinning capacity in the world, with over 48 million spindles humming away in its numerous mills. This translates to a staggering production of over 4,700 million kgs of yarn annually, a testament to the industry's sheer scale.</p>
+              <p><span class="sub-heading">Textile Hub:</span> The Indian spinning industry forms the backbone of the country's textile sector, a major contributor to the national economy. It employs millions directly and indirectly, supporting livelihoods across various levels.</p>
+              <p><span class="sub-heading">Yarn Expertise:</span> Indian spinners have mastered the art of crafting diverse yarns, catering to a wide range of needs. From basic cotton yarns to high-tech blended and specialty yarns, the industry offers a comprehensive portfolio.</p>
+              <p><span class="sub-heading">Export Champion:</span> India is a global leader in yarn exports, with its threads reaching corners of the world. China, Bangladesh, and Europe are some of the major importers of Indian yarn, valuing its quality and competitive pricing.</p>
+              <h4 class="section-title">Challenges and Opportunities:</h4>
+              <p>Despite its success, the Indian spinning industry faces challenges like rising raw material costs, intense competition, and technological advancements demanding constant adaptation. However, initiatives like modernization, skill development, and diversification hold immense potential for future growth.</p>
+              <h4 class="section-title">Spinning on the World Stage:</h4>
+              <p>While India shines brightly, the global spinning industry is a dynamic tapestry woven with contributions from various players.</p>
+              <ul>
+                <li><span class="sub-heading">China:</span> The undisputed heavyweight, China holds the top spot in terms of spinning capacity and production, shaping the global yarn market significantly.</li>
+                <li><span class="sub-heading">Southeast Asia:</span> Countries like Vietnam, Indonesia, and Bangladesh are emerging as strong contenders, leveraging their cost-effective production to make a mark.</li>
+                <li><span class="sub-heading">Europe:</span> Though facing stiff competition, European spinners maintain a niche with their focus on high-quality specialty yarns and sustainable practices.</li>
+              </ul>
+              <h4 class="section-title">A Sustainable Future:</h4>
+              <p>The future of the spinning industry hinges on embracing sustainability. Environmentally friendly practices, waste reduction, and ethical sourcing are becoming increasingly important for spinners to thrive in the long run.</p>
+              <p><em>In conclusion, the spinning industry, with India playing a starring role, is a vital force in the world of textiles. Its threads bind communities, fuel economies, and clothe countless individuals. As the industry adapts to evolving trends and prioritizes sustainability, its future promises to be as vibrant and interwoven as the fabrics it creates.</em></p>
             </div>
-        </section>
-        <div class="container mt-4">
-            <h1>Contact Details</h1>
-            <hr>
-            <h2>Mr. M L Jhunjhunwala, Executive Director</h2>
-            <p>
-                Shop No. 4, Gokul Accord A, Thakur Complex<br>
-                Kandivali East, Mumbai 400 101<br>
-                Phone: <a href="tel:+919323466171">+91 9323466171</a><br>
-                Email: <a href="mailto:contact@isa-domain.com">contact@isa-domain.com</a>
-            </p>
-    
-            <h2>Mr. Prashant Mohta, President</h2>
-            <p>
-                (Provide additional contact details here as per your requirement)
-            </p>
-    
-            <h2>Mr. Prakash Maheshwar, Vice President</h2>
-            <p>
-                Phone: <a href="tel:+919772214445">+91 9772214445</a><br>
-                Email: <a href="mailto:info@isa-domain.com">info@isa-domain.com</a>
-            </p>
-    
-            <h3>Overview of Indian Spinning Industry</h3>
-            <p>
-                (Provide an overview of the spinning industry, including statistics on exports, production, and any other relevant information to make the website attractive.)
-            </p>
-    
-            <p>
-                For more details or inquiries, please feel free to get in touch.
-                Best Wishes...<a href="mailto:info@isa-domain.com">contact us</a>.
-            </p>
+          </div>
         </div>
-        {% comment %} <section id="contact">
-            <h2>Contact Us</h2>
-            <p>
-                
-
-
-            </p>
-        </section> {% endcomment %}
+      </div>
     </div>
-
-    <footer>
-        <div class="container" >
-            <p>&copy; 2023 Indian Spinners Association. All rights reserved.</p>
+    <!-- Current Board Members -->
+    <section id="current-board" class="py-5 text-center">
+      <div style="background-color: #ffffff;" class="container">
+        <h2>Current Board Members</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../static/images/member1.jpg" alt="Member 1">
+            <a href="prashant">SHRI PRASHANT MOHOTA <br>PRESIDENT <br> Indian Spinners Association</a>
+          </div>
+          <div class="col-md-4">
+            <img src="../static/images/member2.jpg" alt="Member 2">
+            <a href="member2">SHRI PRAKASH MAHESHWARI <br>VICE PRESIDENT <br>Indian Spinners Association</a>
+          </div>
+          <div class="col-md-4">
+            <img src="../static/images/member3.jpg" alt="Member 3">
+            <a href="member3">SHRI M L JHUNJHUNWALA <br>EXECUTIVE DIRECTOR <br>Indian Spinners Association</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color:#202431;" class="text-center py-3">
+      <div style="color: #f8f8f7;" class="container">
+        <h4 style="text-align: left;">Contact Details</h4>
+         <p style="text-align: left;">MR. M L JHUNJHUNWALA, EXECUTIVE DIRECTROR <br>
+          SHOP NO.4 <br>
+          GOKUL ACCORD A <br>
+          THAKUR COMPLEX <br>
+          KANDIVALI EAST <br>
+          MUMBAI 400 101 <br>
+          PHONE:- +919323466171 <br>
+          EMAIL:
+          </p>
+        
+        <!-- Add contact details here -->
+        <p>© Indian Spinner Association. All rights reserved.</p>
+      </div>
     </footer>
-    {% comment %} <!-- Footer -->
-    <div id="f1" style="position: absolute; bottom: 0px;width: 100%;">
-        <footer class="bg-dark text-light text-center py-3" >
-            &copy; 2023 Indian Spinners Association. All rights reserved.
-        </footer>
-    </div> {% endcomment %}
+  </div>
 
-    <!-- Link to Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
