@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Indian Spinners Association</title>
+    <!-- <title>About - Indian Spinners Association</title> -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Add your custom CSS styles here */
@@ -14,72 +14,39 @@
         }
 
         body{
-            background-color: #414141;
-            color: aliceblue;
+            background-color: #ffffff;
+            color: black;
         }
         hr {
             border-color: #007bff; /* Change this color to the desired color */
             border-width: 2px; /* Optional: Modify the border width */
         }
+
+        li{
+            font-size: 1.2em;
+        }
     </style>
 </head>
 
 <body>
-    {% include 'navbar.html' %}
+    {% include 'navbar1.html' %}
     <div class="container mt-4">
-        <h1>About ISA</h1>
+        <h1>Objectives ISA</h1>
         <hr style="color: #3A5795;">
-        <h3>Objectives</h3>
-        <p>
-            ISA was formed in 1985 by leading spinners to protect the interests of spinning mills using man-made and natural fibers. The objectives include:
-        </p>
+        <h3></h3>
+        
         <ol>
-            <li>To engage with raw material vendors for fair pricing to spinning mills.</li>
-            <li>Helping mills contest anti-dumping investigations initiated by local raw material manufacturers.</li>
-            <li>To propose budgets to the Central Government.</li>
-            <li>Continuous engagement with the Textile Commissioner for Technology Upgradation Fund matters.</li>
-            <li>Engagement with DGFT and Ministry of Commerce for Foreign Trade matters.</li>
+            <li>To engage on continuous basis with raw material vendors (PSF, VSF and ASF) to ensure that they charge fair price to spinning mills.</li>
+            <li>Helping mills in contesting Anti dumping investigations initiated at the instance to local raw material manufacturers.</li>
+            <li>To give budget proposals to Central Govt.</li>
+            <li>To continuously engage with Textile commissioner on matters related to Technology Upgradation fund.</li>
+            <li>To engage with DGFT and Ministry of commerce on matters related to Foreign Trade.</li>
         </ol>
-
-        <h3>Current Board</h3>
-        <div class="board-member">
-            <h4>Shri Prashant Mohta, President</h4>
-        </div>
-        <div class="board-member">
-            <h4>Shri Prakash Maheshwari, Vice President</h4>
-            <p>
-                Chief Executive (Corporate Affairs) at RSWM Ltd, a leading textile company with 535,000 spindles. He is a Chartered Accountant with nearly 40 years of experience.
-            </p>
-        </div>
-        <div class="board-member">
-            <h4>Shri M L Jhunjhunwala, Executive Director</h4>
-            <p>
-                Responsible for day-to-day affairs of ISA. A Cost Accountant by profession, former President of RSWM Ltd, with an industry experience of 40 years.
-            </p>
-        </div>
-
-        <h3>History</h3>
-        <p>
-            ISA was formed in 1985 by leading spinners like Rajasthan Spinning & Wvg Mills Ltd, Aditya Mills, Banswara Syntex, etc. The objective was to protect the interests of spinning mills using man-made and natural fibers.
-        </p>
-        <p>
-            During those days, man-made fibers carried high duties and faced availability issues. ISA took steps to represent to the Central Govt about hurdles faced by spinners and advocated policy changes for smoother business flow, including exports and imports.
-        </p>
-
-        <h3>Activities/Services Offered by ISA</h3>
-        <ul>
-            <li>Market updates on yarn prices.</li>
-            <li>Price trends of PSF, VSF, and other fibers.</li>
-            <!-- Add other points -->
-        </ul>
-        <p>
-            For further information or inquiries, please <a href="contact.html">contact us</a>.
-        </p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
+{% include 'footer.html' %}
 </html>
