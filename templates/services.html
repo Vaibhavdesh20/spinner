@@ -1,41 +1,44 @@
 <!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>About - Indian Spinners Association</title> -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Add your custom CSS styles here */
-        /* Style for board member details */
-        .board-member {
-            margin-bottom: 20px;
-        }
-
-        body{
-            background-color: #ffffff;
-            color: black;
-        }
-        hr {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities of ISA / Services Offered</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional CSS styles can be added here */
+    .section {
+      padding: 50px 0;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .service-item {
+      margin-bottom: 10px;
+    }
+    hr {
             border-color: #007bff; /* Change this color to the desired color */
             border-width: 2px; /* Optional: Modify the border width */
         }
-
-        li{
-            font-size: 1.2em;
-        }
-    </style>
+    li{
+      font-size: 1.2em;
+    }
+  </style>
 </head>
-
 <body>
-    {% include 'navbar1.html' %}
-    <div class="container mt-4">
-        <h1>Activities of ISA / Services Offered</h1>
+  {% include 'navbar1.html' %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section">
+        <h1 class="section-title">Activities of ISA / Services Offered</h1>
         <hr style="color: #3A5795;">
-        <h3></h3>
-        
-        <ul>
+        <div class="section-content">
+          <ul class="service-list">
             <li class="service-item">Market update on yarn prices</li>
             <li class="service-item">Update on price trend of PSF, VSF, and other fibers</li>
             <li class="service-item">Liaison between government and industry</li>
@@ -48,15 +51,16 @@
             <li class="service-item">Benchmarking on important industry inputs</li>
             <li class="service-item">Giving pre-budget memorandum to government on budget proposals</li>
             <li class="service-item">Continuous engagement with the Office of Textile Commissioner and Ministry of Textiles on various industry-related issues including payment of subsidy under Technology Upgradation Fund Scheme (TUFS)</li>
-        </ul>
-        <br>
-        <br>
-        <br>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 {% include 'footer.html' %}
 </html>
