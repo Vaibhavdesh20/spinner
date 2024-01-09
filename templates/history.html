@@ -1,55 +1,50 @@
 <!DOCTYPE html>
-{% load static %}
-{% csrf_token %}
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>History of ISA</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Add your custom CSS styles here */
-    /* Style for board member details */
-    .board-member {
-        margin-bottom: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>About - Indian Spinners Association</title> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom CSS styles here */
+        /* Style for board member details */
+        .board-member {
+            margin-bottom: 20px;
+        }
 
-    body{
-        background-color: #ffffff;
-        color: black;
-    }
-    hr {
-        border-color: #007bff; /* Change this color to the desired color */
-        border-width: 2px; /* Optional: Modify the border width */
-    }
+        body{
+            background-color: #ffffff;
+            color: black;
+        }
+        hr {
+            border-color: #007bff; /* Change this color to the desired color */
+            border-width: 2px; /* Optional: Modify the border width */
+        }
 
-    li{
-        font-size: 1.2em;
-    }
-  </style>
+        p{
+            font-size: 1.2em;
+        }
+    </style>
 </head>
-<body style="background-color: #ffffff;">
-  {% include 'navbar1.html' %}
-  
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="section">
-        <h1 class="section-title">History of ISA</h1>
+
+<body>
+    {% include 'navbar1.html' %}
+    <div class="container mt-4">
+        <h1>History of ISA</h1>
         <hr style="color: #3A5795;">
-        <div class="section-content">
-          <p >ISA was formed in 1985 by leading spinners like Rajasthan Spinning & Wvg Mills Ltd, Aditya Mills, Banswara Syntex, etc. The objective of ISA was to protect the interests of spinning mills using man-made fibers and natural fibers. During those days, man-made fibers carried very high duties, and availability was also an issue.</p>
-          <p>India was a controlled economy, and there were too many regulations to be complied with. Export imports were also highly regulated. ISA took all necessary steps to represent to the central government about various hurdles faced by spinners and support needed from the government.</p>
-          <p>ISA represented to the government about policy changes needed to have a smooth business flow, including export and imports. ISA took business delegations abroad to appraise yarn users about India's potential as yarn exporters.</p>
-        </div>
-      </div>
+        <h3></h3>
+        
+        <ol>
+            <p >ISA was formed in 1985 by leading spinners like Rajasthan Spinning & Wvg Mills Ltd, Aditya Mills, Banswara Syntex, etc. The objective of ISA was to protect the interests of spinning mills using man-made fibers and natural fibers. During those days, man-made fibers carried very high duties, and availability was also an issue.</p>
+            <p>India was a controlled economy, and there were too many regulations to be complied with. Export imports were also highly regulated. ISA took all necessary steps to represent to the central government about various hurdles faced by spinners and support needed from the government.</p>
+            <p>ISA represented to the government about policy changes needed to have a smooth business flow, including export and imports. ISA took business delegations abroad to appraise yarn users about India's potential as yarn exporters.</p>  
+        </ol>
     </div>
-  </div>
-</div>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 {% include 'footer.html' %}
 </html>
